@@ -1,0 +1,13 @@
+.header {
+    background-color: $dark-blue;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: $white;
+        font-weight: 700;
+        margin: 0;
+    }
+}

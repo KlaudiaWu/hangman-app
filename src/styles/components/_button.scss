@@ -1,0 +1,32 @@
+.keyboard__button {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: $blue;
+    font-weight: 700;
+    font-size: $l-size;
+}
+
+.keyboard__button:hover {
+    background-color: lighten($blue, 10%);
+}
+
+.newgame__button {
+    height: 80px;
+    margin: 10px;
+    font-weight: 700;
+    max-width: 50%;
+    align-self: center;
+}
+
+@media (max-width: 740px) {
+    .newgame__button {
+        max-width: 100%;
+    }
+    .keyboard__button {
+        width: 65px;
+        height: 65px;
+        margin: 5px;
+        font-size: $m-size;
+    }
+}

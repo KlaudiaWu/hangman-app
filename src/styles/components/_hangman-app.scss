@@ -1,0 +1,62 @@
+.game-container__wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: 60vh;
+    //Na mobilu musi wrapować
+}
+
+.game-container__word {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-container__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.game-container__lifes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    i {
+        margin: 0 20px;
+        color: $red;
+    }
+}
+
+.keybord__button-wrapper {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 10px;
+    font-size: $xl-size;
+}
+
+.keybord__button-wrapper--empty {
+    border-bottom: 5px solid black;
+}
+
+@media (max-width: 740px) {
+    .game-container__wrapper {
+        flex-direction: column-reverse;
+    }
+    .game-container__lifes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    
+        i {
+            margin: 0 0px;
+        }
+    }
+    .keybord__button-wrapper {
+        width: 35px;
+        height: 35px;
+        font-size: $l-size;
+    }
+}
